@@ -3,18 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { ImmatriculationComponent } from './immatriculation/immatriculation.component';
-import { ErrorService } from './immatriculation/error.service';
+import { immatriculationList } from './immatriculation/immatriculation-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImmatriculationComponent,
+    immatriculationList
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [ErrorService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
